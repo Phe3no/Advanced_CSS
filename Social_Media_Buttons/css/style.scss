@@ -1,0 +1,74 @@
+@import "constants";
+@import "mixins";
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.main-area {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: end;
+  width: 100%;
+  height: 90vh;
+  padding-bottom: 110px;
+  margin: 0 auto;
+  background-color: $gray;
+  overflow: hidden;
+  &__blog-box {
+    background-color: $blog-color;
+    position: relative;
+    @include media-button-image-area();
+    &::after {
+      content: "Check out my blog";
+      @include media-button-link-area();
+    }
+  }
+  &__twitter-box {
+    background-color: $twitter-color;
+    position: relative;
+    @include media-button-image-area();
+    &::after {
+      content: "Follow me on twitter";
+      @include media-button-link-area();
+    }
+  }
+  &__linkedin-box {
+    background-color: $linkedin-color;
+    position: relative;
+    @include media-button-image-area();
+    &::after {
+      content: "Connect on Linkedin";
+      @include media-button-link-area();
+    }
+  }
+  &__facebook-box {
+    background-color: $facebook-color;
+    position: relative;
+    @include media-button-image-area();
+    &::after {
+      content: "Like my Facebook page";
+      @include media-button-link-area();
+    }
+  }
+  &__github-box {
+    background-color: $github-color;
+    position: relative;
+    @include media-button-image-area();
+    &::after {
+      content: "See projects on Github";
+      @include media-button-link-area();
+    }
+  }
+  &__move {
+    width: 100px;
+    height: 80px;
+    transition: 350ms width ease-in-out 50ms;
+    &:hover {
+      width: 360px;
+      transition: 350ms width ease-in-out 50ms;
+    }
+  }
+}

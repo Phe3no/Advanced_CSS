@@ -1,0 +1,166 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.main-area {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: end;
+  width: 100%;
+  height: 90vh;
+  padding-bottom: 110px;
+  margin: 0 auto;
+  background-color: #c3cfe2;
+  overflow: hidden;
+}
+.main-area__blog-box {
+  background-color: #e17b77;
+  position: relative;
+}
+.main-area__blog-box .img-box {
+  width: 100px;
+  height: 100%; /*same as height main-area__move 80px*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-area__blog-box .img-box img {
+  width: 70%;
+  height: 70%;
+}
+.main-area__blog-box::after {
+  content: "Check out my blog";
+  color: #f4f4f4;
+  text-decoration: underline;
+  font-size: 20px;
+  padding: 0 60px;
+  line-height: 80px; /*same as height of the .img-box*/
+  position: absolute;
+  top: 0px;
+  left: 80px;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.main-area__twitter-box {
+  background-color: #00aced;
+  position: relative;
+}
+.main-area__twitter-box .img-box {
+  width: 100px;
+  height: 100%; /*same as height main-area__move 80px*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-area__twitter-box .img-box img {
+  width: 70%;
+  height: 70%;
+}
+.main-area__twitter-box::after {
+  content: "Follow me on twitter";
+  color: #f4f4f4;
+  text-decoration: underline;
+  font-size: 20px;
+  padding: 0 60px;
+  line-height: 80px; /*same as height of the .img-box*/
+  position: absolute;
+  top: 0px;
+  left: 80px;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.main-area__linkedin-box {
+  background-color: #007bb6;
+  position: relative;
+}
+.main-area__linkedin-box .img-box {
+  width: 100px;
+  height: 100%; /*same as height main-area__move 80px*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-area__linkedin-box .img-box img {
+  width: 70%;
+  height: 70%;
+}
+.main-area__linkedin-box::after {
+  content: "Connect on Linkedin";
+  color: #f4f4f4;
+  text-decoration: underline;
+  font-size: 20px;
+  padding: 0 60px;
+  line-height: 80px; /*same as height of the .img-box*/
+  position: absolute;
+  top: 0px;
+  left: 80px;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.main-area__facebook-box {
+  background-color: #3b5998;
+  position: relative;
+}
+.main-area__facebook-box .img-box {
+  width: 100px;
+  height: 100%; /*same as height main-area__move 80px*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-area__facebook-box .img-box img {
+  width: 70%;
+  height: 70%;
+}
+.main-area__facebook-box::after {
+  content: "Like my Facebook page";
+  color: #f4f4f4;
+  text-decoration: underline;
+  font-size: 20px;
+  padding: 0 60px;
+  line-height: 80px; /*same as height of the .img-box*/
+  position: absolute;
+  top: 0px;
+  left: 80px;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.main-area__github-box {
+  background-color: #333;
+  position: relative;
+}
+.main-area__github-box .img-box {
+  width: 100px;
+  height: 100%; /*same as height main-area__move 80px*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-area__github-box .img-box img {
+  width: 70%;
+  height: 70%;
+}
+.main-area__github-box::after {
+  content: "See projects on Github";
+  color: #f4f4f4;
+  text-decoration: underline;
+  font-size: 20px;
+  padding: 0 60px;
+  line-height: 80px; /*same as height of the .img-box*/
+  position: absolute;
+  top: 0px;
+  left: 80px;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.main-area__move {
+  width: 100px;
+  height: 80px;
+  transition: 350ms width ease-in-out 50ms;
+}
+.main-area__move:hover {
+  width: 360px;
+  transition: 350ms width ease-in-out 50ms;
+}/*# sourceMappingURL=style.css.map */

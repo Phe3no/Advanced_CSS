@@ -1,0 +1,26 @@
+@mixin media-button-image-area() {
+  & .img-box {
+    width: 100px;
+    height: 100%; /*same as height main-area__move 80px*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & img {
+      width: 70%;
+      height: 70%;
+    }
+  }
+}
+
+@mixin media-button-link-area() {
+  color: $white;
+  text-decoration: underline;
+  font-size: 20px;
+  padding: 0 60px;
+  line-height: 80px; /*same as height of the .img-box*/
+  position: absolute;
+  top: 0px;
+  left: 80px;
+  white-space: nowrap;
+  cursor: pointer;
+}

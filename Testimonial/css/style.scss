@@ -1,0 +1,69 @@
+@import "./constants";
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+  background-color: $gray;
+}
+
+.main-area {
+  width: 90%;
+  margin: 20px auto 20px;
+  & .testimonial {
+    &__text {
+      color: $dark_gray;
+      background-color: $white;
+      border-top-left-radius: 30px;
+      border-top-right-radius: 30px;
+      padding: 50px 20px 150px;
+      font-size: 30px;
+      line-height: 2em;
+    }
+    &__picture {
+      position: relative;
+      background-color: $purple_blue;
+      border-bottom-left-radius: 30px;
+      border-bottom-right-radius: 30px;
+      padding-bottom: 50px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      & img {
+        position: absolute;
+        top: -110px;
+        background-color: $white;
+        border-radius: 50%;
+        border: 10px solid $white;
+      }
+      & h3 {
+        color: $white;
+        font-size: 2em;
+        letter-spacing: 2px;
+        padding-top: 140px;
+        text-transform: uppercase;
+      }
+      & p {
+        color: $gray;
+        font-size: 1.7em;
+        padding-top: 1em;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 620px) {
+  .main-area {
+    width: 620px;
+    & .testimonial {
+      &__text {
+        padding: 50px 60px 150px;
+      }
+    }
+  }
+}
